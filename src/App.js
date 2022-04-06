@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Test from "./Test";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      list: ['영화관가기', '매일책읽기', '수영배우기'],
+    }
+  } // constructor
 
+  render() {
+    console.log(this.state)
+    return (   
+      <div className="App">
+        <h1>내 테스트</h1>
+        {/* 컴포넌트를 넣어줍니다. */}
+        <Test/>
+      </div>
+    );
+  } //render
+} // class
+
+
+// function App () {
+//   const styles = {
+//     color: 'orange',
+//     fontSize: '20px'
+//   };
+  
+//   return (
+//     <div className="APP">
+//       <p style={styles}>안녕하세요 리액트입니다.</p>
+//       <Test />
+//     </div>
+//   );
+// }
 export default App;
