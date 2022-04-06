@@ -1,5 +1,6 @@
 import React from "react";
 import Test from "./Test";
+import './style.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -13,14 +14,16 @@ class App extends React.Component {
     console.log(this.state)
     return (   
       <div className="App">
-        <h1>내 테스트</h1>
+        <div className="container">
+          <hr className="line"/>  
+          <h1 className="title">내 테스트</h1>
         {/* 컴포넌트를 넣어줍니다. */}
-        <Test/>
+        <Test list={this.state.list}/>
+        </div>
       </div>
     );
   } //render
 } // class
-
 
 // function App () {
 //   const styles = {
