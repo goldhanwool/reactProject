@@ -1,6 +1,8 @@
 import React from "react";
 import Test from "./Test";
-import './style.css'
+// import './style.css';
+import styled from "styled-components";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -25,17 +27,7 @@ class App extends React.Component {
   } //render
 } // class
 
-// function App () {
-//   const styles = {
-//     color: 'orange',
-//     fontSize: '20px'
-//   };
-  
-//   return (
-//     <div className="APP">
-//       <p style={styles}>안녕하세요 리액트입니다.</p>
-//       <Test />
-//     </div>
-//   );
-// }
+
+
+
 export default App;

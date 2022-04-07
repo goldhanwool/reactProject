@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+
 
 const Test =  (props) => { 
     const my_list = props.list;
@@ -14,5 +16,20 @@ const Test =  (props) => {
         </div>
     )
 }
+
+const ListStyle = styled.div`
+display: flex;
+flex-direction: column;
+height: 100%;
+overflow-x: hidden;
+overflow-y: auto;
+`;
+
+const ItemStyle = styled.div`
+padding: 16px;
+margin: 8px;
+background-color: aliceblue;
+`;
+
 
 export default Test;
